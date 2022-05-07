@@ -1,0 +1,8 @@
+# pip install -r requirements.txt
+flask
+flask-sqlalchemy
+flask-migrate
+flask-admin
+dynaconf
+flask-wtf
+email_validator

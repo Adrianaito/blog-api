@@ -1,0 +1,7 @@
+**.env
+**/__pycache__/**
+fbAdminConfig.json
+fbconfig.json
+**.serverless
+**/.db**
+**.secrets.**

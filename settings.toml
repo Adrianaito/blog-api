@@ -1,0 +1,37 @@
+[default]
+DEBUG = false
+FLASK_ADMIN_SWATCH = 'superhero'
+ADMIN_NAME = 'Blog'
+EXTENSIONS = [
+  "src.ext.db:init_app",
+  # "src.ext.auth:init_app",
+  "src.ext.admin:init_app",
+  "src.ext.migrate:init_app",
+  "src.ext.cli:init_app",
+  "src.ext.site:init_app",
+]
+
+[development]
+DEBUG = true
+SQLALCHEMY_DATABASE_URI = 'sqlite:///blog-post.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
+DEBUG_TB_PROFILER_ENABLED = true
+DEBUG_TB_INTERCEPT_REDIRECTS = true
+ADMIN_NAME = 'Blog (dev)'
+EXTENSIONS = [
+  # "dynaconf_merge",
+  "src.ext.db:init_app",
+  # "src.ext.auth:init_app",
+  # "src.ext.admin:init_app",
+  "src.ext.migrate:init_app",
+  "src.ext.cli:init_app",
+  # "src.ext.toolbar:init_app", # for debug toolbar only in dev mode
+  # "src.ext.site:init_app",
+  "src.ext.api:init_app",
+]
+
+[production]
+DEBUG = false
+SQLALCHEMY_DATABASE_URI = 'sqlite:///blog-post.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = false
