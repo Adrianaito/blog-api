@@ -6,3 +6,4 @@ flask-admin
 dynaconf
 flask-wtf
 email_validator
+flask-cors
