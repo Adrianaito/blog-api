@@ -5,3 +5,4 @@ fbconfig.json
 **.serverless
 **/.db**
 **.secrets.**
+**.env.**
