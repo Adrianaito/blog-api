@@ -12,7 +12,6 @@ EXTENSIONS = [
 
 [development]
 DEBUG = true
-SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://adrianaito:password@localhost/firebase-blog-api'
 SQLALCHEMY_TRACK_MODIFICATIONS = false
 DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
 DEBUG_TB_PROFILER_ENABLED = true
@@ -29,5 +28,4 @@ EXTENSIONS = [
 
 [production]
 DEBUG = false
-SQLALCHEMY_DATABASE_URI = 'sqlite:///blog-post.db'
 SQLALCHEMY_TRACK_MODIFICATIONS = false
