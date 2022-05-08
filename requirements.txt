@@ -7,3 +7,10 @@ dynaconf
 flask-wtf
 email_validator
 flask-cors
+firebase-admin
+Pyrebase
+Flask-Limiter
+flask-marshmallow
+marshmallow-sqlalchemy
+pyjwt
+psycopg2
