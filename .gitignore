@@ -126,3 +126,4 @@ dmypy.json
 
 # db
 **/*.db
+node_modules
